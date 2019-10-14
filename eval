@@ -1,0 +1,12 @@
+a=document.querySelectorAll('a[title="Teacher FeedBack"]')
+for (i=0;i<a.length;i++){
+temp=a[i].href;
+window.location=temp;
+
+
+
+b=document.querySelectorAll("input[type='radio']");
+for (j=0;j<b.length;j=j+5){
+b[j].checked=true;
+}
+document.querySelector('input[type="submit"]').click();
